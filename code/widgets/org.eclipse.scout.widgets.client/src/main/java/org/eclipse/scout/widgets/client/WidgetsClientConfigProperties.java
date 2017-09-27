@@ -9,7 +9,7 @@ public final class WidgetsClientConfigProperties {
   public static class GitUrlConfigProperty extends AbstractStringConfigProperty {
     @Override
     public String getKey() {
-      return "git.url";
+      return "widgets.git.url";
     }
 
     @Override
@@ -21,7 +21,7 @@ public final class WidgetsClientConfigProperties {
   public static class GitBranchConfigProperty extends AbstractStringConfigProperty {
     @Override
     public String getKey() {
-      return "git.branch";
+      return "widgets.git.branch";
     }
 
     @Override
@@ -33,7 +33,7 @@ public final class WidgetsClientConfigProperties {
   public static class GitFolderConfigProperty extends AbstractStringConfigProperty {
     @Override
     public String getKey() {
-      return "git.folder";
+      return "widgets.git.folder";
     }
 
     @Override
@@ -45,7 +45,7 @@ public final class WidgetsClientConfigProperties {
   public static class GitSourceConfigProperty extends AbstractStringConfigProperty {
     @Override
     public String getKey() {
-      return "git.source";
+      return "widgets.git.source";
     }
 
     @Override

@@ -60,7 +60,7 @@ public class DatabaseProperties {
 
     @Override
     public String getKey() {
-      return "contacts.database.jdbc.mapping.name";
+      return "contacts.database.jdbc.mappingName";
     }
     // tag::structure[]
   }
