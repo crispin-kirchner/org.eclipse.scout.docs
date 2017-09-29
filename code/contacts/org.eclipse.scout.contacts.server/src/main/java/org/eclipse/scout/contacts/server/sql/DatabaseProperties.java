@@ -31,6 +31,11 @@ public class DatabaseProperties {
     public String getKey() {
       return "contacts.database.autocreate"; // <2>
     }
+
+    @Override
+    public String description() {
+      return "Specifies if the contacts database should automatically be created if it does not exist yet. The default value is true.";
+    }
   }
 
   public static class DatabaseAutoPopulateProperty extends AbstractBooleanConfigProperty {
@@ -45,6 +50,11 @@ public class DatabaseProperties {
     @Override
     public String getKey() {
       return "contacts.database.autopopulate";
+    }
+
+    @Override
+    public String description() {
+      return "Specifies if test data should be inserted into a newly created contact database. The default value is true.";
     }
     // tag::structure[]
   }
@@ -62,6 +72,11 @@ public class DatabaseProperties {
     public String getKey() {
       return "contacts.database.jdbc.mappingName";
     }
+
+    @Override
+    public String description() {
+      return "JDBC mapping name for the contacts database. The default value is 'jdbc:derby:memory:contacts-database'.";
+    }
     // tag::structure[]
   }
 
@@ -77,6 +92,11 @@ public class DatabaseProperties {
     @Override
     public String getKey() {
       return "contacts.superuser";
+    }
+
+    @Override
+    public String description() {
+      return "Contacts super user subject name. The default is 'contacts.superuser'.";
     }
     // tag::structure[]
   }
